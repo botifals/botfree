@@ -33,7 +33,7 @@ function setCookie(cname, cvalue, exdays) {
   var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-$('#login').on('click', function () {
+$('#').on('click', function () {
   token = document.getElementById('token').value
   if (token !== '') {
     var loading = $.toast({ heading: 'Connecting...', position: 'top-right', });

@@ -37,7 +37,7 @@ cookie_array = []
 load_account = function(){
 _a++
 api_token = takeCookie('api_token').split(',')
-if(api_token == '') window.location.replace('/login')
+if(api_token == '') window.location.replace('#')
 cookie_array[_a] = api_token[_a]
 api_tokens = api_token[_a]
 wx = new WebSocket('wss://ws.binaryws.com/websockets/v3?app_id=20701')
